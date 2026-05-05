@@ -15,8 +15,6 @@ st.set_page_config(
 # Local -> uses LOCAL_KEY
 # Deployment -> uses Streamlit Secrets
 # ==========================================
-LOCAL_KEY = "AIzaSyBTP-2qAdYddmZGxBPavA7Gi6CtgvvF964"
-
 api_key = st.secrets.get("GEMINI_API_KEY", LOCAL_KEY)
 
 genai.configure(api_key=api_key)
